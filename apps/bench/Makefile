@@ -3,7 +3,7 @@
 #
 
 # FPGA device
-FPGA         := svgx
+FPGA         := cvgt
 
 # Location of preloadable library to fool Quartus tools into thinking a pipe to tee is just a regular TTY
 ISATTY       := $(PROJ_HOME)/hdl-tools/isatty/isatty_hack.so

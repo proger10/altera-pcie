@@ -3,7 +3,7 @@
 #
 
 # FPGA device
-FPGA         := svgx
+FPGA         := cvgt
 
 # Enable/disable register word-swapping
 EN_SWAP      := 0
