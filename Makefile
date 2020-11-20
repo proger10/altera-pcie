@@ -16,7 +16,7 @@
 # DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #
-.PHONY: all test fpga sw clean
+.PHONY: all test fpga fpga1 fpga2 sw clean
 
 all:
 	@echo "Try one of these:"
@@ -49,3 +49,10 @@ clean:
 	@make -C apps/bench/tb-sys  clean
 	@make -C apps/bench/example clean
 	@make -C pcie-driver        clean
+
+fpga1:
+	@make -C hdl-tools
+	@make -C ip gen
+
+fpga2:
+	@make -C apps/demo
